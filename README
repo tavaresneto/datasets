@@ -1,0 +1,40 @@
+Instances for Single Machine + dependent setups + VRP
+
+File format:
+5	1	18
+Ji	Pi	Si
+0	0	0
+1	76	8
+Sij	0	1	2...
+0	4	6	3	1	
+4	0	10	15	6	
+6	10	0	14	6	
+3	15	14	0	6	
+1	6	6	6	0	
+Tij	0	1	2...
+0	97.0	43.0	5.0	11.0	
+97.0	0	34.0	74.0	68.0	
+43.0	34.0	0	8.0	10.0	
+5.0	74.0	8.0	0	10.0	
+11.0	68.0	10.0	10.0	0	
+
+Details:
+J0 is a dummy job
+
+First block (Line 1)
+"5"  is the total number of jobs
+"1"  is the number of vehicles
+"18" is the capacity of each vehicle
+
+Second block (table "Ji	Pi	Si")
+Ji shows the job id
+Pi the processing times
+Si the size of the job
+
+Third block
+Sij	0	1	2...
+Shows the setup time between i and j
+
+Last block
+Tij	0	1	2...
+Shows the travell time betwen i and j

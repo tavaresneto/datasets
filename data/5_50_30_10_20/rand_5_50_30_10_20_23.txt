@@ -1,0 +1,81 @@
+
+
+sets
+i        orders          /0*5/
+k        routes          /1*5/
+p        positions       /0*5/
+;
+
+alias(i,j)
+alias(i,h)
+alias(i,hh)
+alias(i,jj)
+alias(k,kk)
+                            Parameters
+
+rho(i)	Processing time
+/
+0	0
+1	37
+2	15
+3	50
+4	64
+5	24
+/
+
+gamma(i)	Duedate
+/
+0	0
+1	5
+2	62
+3	52
+4	40
+5	72
+/
+
+sigma(i)	Size
+/
+0	0
+1	8
+2	2
+3	7
+4	4
+5	8
+/
+
+epsilon(i)	Priority
+/
+0	0
+1	7
+2	6
+3	2
+4	1
+5	9
+/
+
+psi	Vehicle Capacity
+/ 39 /
+;
+
+Table kappa(i,j)                 Setup
+         0        1        2        3        4        5        
+0        0        91       95       179      293      121      
+1        91       0        171      218      316      117      
+2        95       171      0        107      225      122      
+3        179      218      107      0        118      111      
+4        293      316      225      118      0        199      
+5        121      117      122      111      199      0        
+;
+
+
+
+Table delta(i,j)                 Distance
+         0        1        2        3        4        5        
+0        0        340      1250     510      860      930      
+1        340      0        107      79       94       123      
+2        1250     107      0        131      85       161      
+3        510      79       131      0        58       43       
+4        860      94       85       58       0        77       
+5        930      123      161      43       77       0        
+;
+
